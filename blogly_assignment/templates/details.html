@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{user.first_name}}</title>
+</head>
+
+
+<body>
+    <form>
+    <h1>{{user.first_name}} {{user.last_name}} Detail Page</h1>                  
+                                                             
+        <p>{{user.first_name}} {{user.last_name}}</p>                                                             
+        <br>
+        <img src={{user.image_url}}>
+        <br>
+    <form>
+
+
+        <button><a href="/user_delete/{{user.id}}" method="DELETE">Delete</a></button>
+
+        <button><a href="/user_edit/{{user.id}}">Edit User</a></button>
+        <br>
+        <br>
+        <a href="/">Return To Previous Page</a>                                                            
+
+</body>
+
+
+</html>
